@@ -27,6 +27,7 @@ const SIMS: Record<SimKey, LazyExoticComponent<ComponentType>> = {
   WingCracks: lazy(() => import("./WingCracks")),
   FaultZone: lazy(() => import("./FaultZone")),
   MohrAnderson: lazy(() => import("./MohrAnderson")),
+  SyntheticAntithetic: lazy(() => import("./SyntheticAntithetic")),
 };
 
 export const SIM_TITLES: Record<SimKey, string> = {
@@ -54,6 +55,7 @@ export const SIM_TITLES: Record<SimKey, string> = {
   WingCracks: "Grow a fault",
   FaultZone: "Inside a fault zone",
   MohrAnderson: "Mohr circle & Anderson",
+  SyntheticAntithetic: "Synthetic, antithetic & grabens",
 };
 
 export function Sim({ name }: { name: SimKey }) {

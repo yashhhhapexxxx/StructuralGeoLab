@@ -102,7 +102,7 @@ export default function Landing() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-5 py-10 md:grid-cols-4 md:px-8">
           {[
             { n: LEVELS.length, l: "levels" },
-            { n: 24, l: "simulations" },
+            { n: 25, l: "simulations" },
             { n: 70, l: "glossary terms", s: "+" },
             { n: 30, l: "km descent", s: " km" },
           ].map((x) => (

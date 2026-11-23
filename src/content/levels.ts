@@ -28,7 +28,8 @@ export type SimKey =
   | "FaultGrowth"
   | "WingCracks"
   | "FaultZone"
-  | "MohrAnderson";
+  | "MohrAnderson"
+  | "SyntheticAntithetic";
 
 export type Block =
   | { type: "p"; text: string }
@@ -423,6 +424,7 @@ export const LEVELS: Level[] = [
           "Low-angle faults dip < 30°, high-angle > 60°; wrench (strike-slip) faults are often sub-vertical.",
         ],
       },
+      { type: "sim", sim: "SyntheticAntithetic", prompt: "Compare Synthetic and Antithetic first, then Symmetric graben vs Half-graben. Which is more common in nature?" },
       { type: "sim", sim: "RiftBuilder", prompt: "Animate rifting. Which blocks are hanging walls, and which is the footwall of two faults at once?" },
     ],
     quiz: [

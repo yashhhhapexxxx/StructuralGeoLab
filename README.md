@@ -1,6 +1,6 @@
 # StructuralGeoLab
 
-**Learn structural geology by moving it.** An interactive website with 24 simulations covering folds, faults, strike & dip, geological maps and the forces that shape the crust.
+**Learn structural geology by moving it.** An interactive website with 25 simulations covering folds, faults, strike & dip, geological maps and the forces that shape the crust.
 
 ## What's inside
 
