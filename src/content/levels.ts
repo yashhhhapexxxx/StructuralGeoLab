@@ -29,7 +29,8 @@ export type SimKey =
   | "WingCracks"
   | "FaultZone"
   | "MohrAnderson"
-  | "SyntheticAntithetic";
+  | "SyntheticAntithetic"
+  | "AnticlineSyncline";
 
 export type Block =
   | { type: "p"; text: string }
@@ -257,6 +258,8 @@ export const LEVELS: Level[] = [
           ["Crest & trough", "Highest and lowest points of a fold (not always the hinge in inclined folds)."],
         ],
       },
+      { type: "h", text: "Anticline or syncline?" },
+      { type: "sim", sim: "AnticlineSyncline", prompt: "Play the story, then switch to “Test yourself”. Read the ages on the map strip to find the anticline." },
       { type: "h", text: "Shape vs age" },
       {
         type: "table",
